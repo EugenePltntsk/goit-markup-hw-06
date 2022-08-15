@@ -66,16 +66,50 @@
       </section>
 
       <div class="backdrop is-hidden" data-modal>
-        <form class="js-speaker-form">
-          <input type="text" name="user-name" />
-        </form>
-
         <div class="modal">
           <button data-modal-close type="button" class="modal-close-button">
             <svg class="button-close-icon" width="11" height="11">
               <use href="./images/icons.svg#icon-close-cross"></use>
             </svg>
           </button>
+
+          <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+
+          <form class="js-speaker-form">
+            <ul class="personal-info">
+              <li class="personal-info-item">                
+                <label class="label" for="name">Ім'я</label>
+                <input type="text" name="name" id="name"/>
+              </li>
+
+              <li class="personal-info-item">
+                <label for="tel">Телефон</label>
+                <input type="tel" name="tel" id="tel"/>
+              </li>
+
+              <li class="personal-info-item">
+                <label for="mail">Пошта</label>
+                <input type="email" name="mail" id="mail"/>
+              </li>
+              
+          </form>
+
+          <div class="checkbox-box">
+
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox">Погоджуюся з розсилкою та приймаю <span>Умови договору</span></label>
+          
+
+          </div>
+
+          <div class="modal-submit-button">
+            <button type="submit" class="button-form">Відправити</button>
+          </div>
+
+
+
+          
+          
         </div>
       </div>
 
@@ -435,15 +469,14 @@
           <p class="footer-subscribe-title">Підпишіться на розсилку</p>
           <div class="footer-subscribe-box">
             <form class="footer-subscribe-form">
-              <input type="text" name="email" class="input-area" placeholder="email"/>
+              <input type="text" name="email" class="input-area" placeholder="email" />
               <button class="footer-button">
-              <p class="footer-button-title">Підписатися</p>
-              <svg class="experiment">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
+                <p class="footer-button-title">Підписатися</p>
+                <svg class="experiment">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
               </button>
             </form>
-            
           </div>
         </div>
       </div>
