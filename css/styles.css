@@ -755,6 +755,8 @@ img {
 
 /* Footer */
 
+
+
 .link-footer-info {
     padding-top: 12px;
     margin-left: 70px;
@@ -946,6 +948,16 @@ img {
    
    
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1211,6 +1223,87 @@ img {
 .footer-nav:focus .phone {
     color: var(--accent-color);
 }
+
+
+.footer-subscribe {
+    padding-top: 12px;
+    margin-left: 93px;
+}
+
+.footer-subscribe-title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: var(--white-text);
+
+
+}
+
+.footer-button {
+   position: relative;
+   display: inline-block;
+   background-color: var(--accent-color);
+   min-height: 50px;
+   min-width: 200px;
+   
+   color: var(--white-text);
+
+   border-radius: 4px;
+
+   padding: 10px 28px;
+   margin-left: 12px;
+}
+
+.input-area {
+    padding: 15px 16px;
+}
+
+
+.footer-button-title {
+    color: var(--white-text);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+          
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+    
+}
+
+.experiment {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+
+    bottom: 50%;
+    right: 0;
+    transform: translate(-50%, +50%);
+    fill: var(--white-text);
+   
+}
+
+
+
+
+.input-area {
+    width: 358px;
+    height: 50px;
+    background-color: var(--secondary-bg-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+
+
+.footer-subscribe-box {
+    display: flex;
+}
+
+
 
 .backdrop {
     position: fixed;

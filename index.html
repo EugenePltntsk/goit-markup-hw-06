@@ -43,12 +43,14 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="item"><a href="tel:+380961111111" class="link">
-            <svg class="header-icon" width="10" height="16">
+          <li class="item">
+            <a href="tel:+380961111111" class="link">
+              <svg class="header-icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-headersmartphone"></use>
               </svg>
-            +380961111111
-          </a></li>
+              +380961111111
+            </a>
+          </li>
         </ul>
       </div>
     </header>
@@ -64,12 +66,15 @@
       </section>
 
       <div class="backdrop is-hidden" data-modal>
+        <form class="js-speaker-form">
+          <input type="text" name="user-name" />
+        </form>
+
         <div class="modal">
           <button data-modal-close type="button" class="modal-close-button">
             <svg class="button-close-icon" width="11" height="11">
               <use href="./images/icons.svg#icon-close-cross"></use>
             </svg>
-
           </button>
         </div>
       </div>
@@ -107,11 +112,10 @@
 
       <section class="section">
         <div class="container">
-          
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="work-list list">
             <li class="item information">
-               <div class="work-information">
+              <div class="work-information">
                 <p class="work-description">Десктопні додатки</p>
               </div>
               <img
@@ -120,10 +124,9 @@
                 class="work-list-computer"
                 width="370"
               />
-             
             </li>
             <li class="item information">
-               <div class="work-information">
+              <div class="work-information">
                 <p class="work-description">Мобільні додатки</p>
               </div>
               <img
@@ -134,7 +137,7 @@
               />
             </li>
             <li class="item information">
-               <div class="work-information">
+              <div class="work-information">
                 <p class="work-description">Дизайнерські рішення</p>
               </div>
               <img
@@ -367,9 +370,6 @@
           </ul>
         </div>
       </section>
-
-      
-      
     </main>
 
     <footer class="page-footer">
@@ -431,10 +431,28 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <p class="footer-subscribe-title">Підпишіться на розсилку</p>
+          <div class="footer-subscribe-box">
+            <form class="footer-subscribe-form">
+              <input type="text" name="email" class="input-area" placeholder="email"/>
+              <button class="footer-button">
+              <p class="footer-button-title">Підписатися</p>
+              <svg class="experiment">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+              </button>
+            </form>
+            
+          </div>
+        </div>
       </div>
     </footer>
 
-    
-  <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script>
+
+    (() => { document .querySelector('.js-speaker-form') .addEventListener('subnit', e => {
+    e.preventDefault(); new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}:
+    ${value}`), ); }); })();
   </body>
 </html>
