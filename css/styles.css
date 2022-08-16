@@ -1326,6 +1326,9 @@ textarea {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 12px 42px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -1377,6 +1380,8 @@ textarea {
 
 .button-close-icon {
     display: block;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     
 }
@@ -1433,6 +1438,11 @@ textarea {
     margin-bottom: 10px;
     /* padding: 11px 12px; */
     
+
+   
+
+    
+    
     
 }
 
@@ -1447,6 +1457,12 @@ textarea {
     display: inline-block;
     width: 12px;
     height: 12px;
+    
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+
+    
 }
 
 .tel-input-icon {
@@ -1457,6 +1473,8 @@ textarea {
     display: inline-block;
     width: 13px;
     height: 13px;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-input-icon {
@@ -1467,6 +1485,8 @@ textarea {
     display: inline-block;
     width: 15px;
     height: 12px;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -1523,6 +1543,8 @@ textarea {
 
 .textarea {
     height: 120px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textarea:focus {
@@ -1553,8 +1575,12 @@ textarea {
     appearance: none;
     position: absolute;
 
+    transition: fill 2222ms cubic-bezier(0.4, 0, 0.2, 1);
+
     
 }
+
+
 
 
 .checkbox-label {
@@ -1574,6 +1600,8 @@ textarea {
     
     border: 2px solid black;
     border-radius: 4px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     
 
@@ -1584,6 +1612,9 @@ textarea {
     background-color: var(--accent-color);
 
 }
+
+
+
 
 
 .policy {
