@@ -77,39 +77,60 @@
 
           <form class="js-speaker-form">
             <ul class="personal-info">
-              <li class="personal-info-item">                
+              <li class="personal-info-item">
                 <label class="label" for="name">Ім'я</label>
-                <input type="text" name="name" id="name"/>
+                <input class="modal-input" type="text" name="name" id="name" />
+                <svg class="name-input-icon">
+                  <use href="./images/icons.svg#icon-input-name"></use>
+                </svg>
               </li>
 
               <li class="personal-info-item">
-                <label for="tel">Телефон</label>
-                <input type="tel" name="tel" id="tel"/>
+                <label class="label" for="tel">Телефон</label>
+                <input class="modal-input" type="tel" name="tel" id="tel" />
+                <svg class="tel-input-icon">
+                  <use href="./images/icons.svg#icon-input-tel"></use>
+                </svg>
               </li>
 
               <li class="personal-info-item">
-                <label for="mail">Пошта</label>
-                <input type="email" name="mail" id="mail"/>
+                <label class="label" for="mail">Пошта</label>
+                <input class="modal-input" type="email" name="mail" id="mail" />
+                <svg class="mail-input-icon">
+                  <use href="./images/icons.svg#icon-input-mail"></use>
+                </svg>
               </li>
-              
+            </ul>
           </form>
 
+          <div class="modal-textarea">
+            <label class="label" for="comment">Коментар</label>
+            <textarea
+              class="textarea"
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+
           <div class="checkbox-box">
-
-            <input type="checkbox" name="checkbox" id="checkbox">
-            <label for="checkbox">Погоджуюся з розсилкою та приймаю <span>Умови договору</span></label>
-          
-
+            <label class="checkbox-label">
+              <input class="checkbox" type="checkbox" name="checkbox" />
+              <svg class="checkbox-icon">
+                <use href="./images/icons.svg#icon-checkbox"></use>
+              </svg>
+              <span class="policy">
+                Погоджуюся з розсилкою та приймаю
+                  <span><a href="">Умови договору</a></span>
+              </span>
+            </label>
           </div>
 
           <div class="modal-submit-button">
             <button type="submit" class="button-form">Відправити</button>
           </div>
-
-
-
-          
-          
         </div>
       </div>
 
@@ -471,9 +492,9 @@
             <form class="footer-subscribe-form">
               <input type="text" name="email" class="input-area" placeholder="email" />
               <button class="footer-button">
-                <p class="footer-button-title">Підписатися</p>
+                <span class="footer-button-title">Підписатися</span>
                 <svg class="experiment">
-                  <use href="./images/icons.svg#icon-instagram"></use>
+                  <use href="./images/icons.svg#icon-icon-send"></use>
                 </svg>
               </button>
             </form>
@@ -484,8 +505,7 @@
 
     <script src="./js/modal.js"></script>
 
-    (() => { document .querySelector('.js-speaker-form') .addEventListener('subnit', e => {
-    e.preventDefault(); new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}:
-    ${value}`), ); }); })();
+ 
+
   </body>
 </html>
