@@ -1236,8 +1236,15 @@ img {
 
 .footer-subscribe-title {
     margin-bottom: 20px;
-    text-transform: uppercase;
+    
     color: var(--white-text);
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
 
 }
@@ -1263,6 +1270,7 @@ img {
 
 .input-area {
     padding: 15px 16px;
+    color: rgba(255, 255, 255, 0.6);
    
 }
 
@@ -1278,6 +1286,8 @@ img {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    
+
     
     
 }
@@ -1586,7 +1596,9 @@ textarea {
 .checkbox-label {
     display: inline-flex;
     align-items: center;
+   
     margin-right: 7px;
+    
 
 
 }
@@ -1600,6 +1612,7 @@ textarea {
     
     border: 2px solid black;
     border-radius: 4px;
+    transform: translateY(-0.45px);
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -1622,10 +1635,23 @@ textarea {
     margin-left: 7px;
 }
 
+.policy-link a {
+    /* text-decoration: none; */
+    color: var(--accent-color);
+    text-align: center;
+
+}
+
 
 
 .label {
     margin-bottom: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+        
+    letter-spacing: 0.01em;
 }
 
 .button-form {
@@ -1659,6 +1685,7 @@ textarea {
     line-height: 1.71;
         
     text-align: center;
+    
     letter-spacing: 0.03em;
     
 }
